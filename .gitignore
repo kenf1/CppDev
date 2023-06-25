@@ -1,0 +1,48 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#Misc
+.DS_Store
+.vscode
+Sandbox.cpp
+Sandbox
+
+#exclude binaries in LearnCpp
+LearnCpp/*
+!LearnCpp/*.cpp
+!LearnCpp/*.md
+!LearnCpp/12_MultiFile
+
+Tutorial1/*
+!Tutorial1/*.cpp
+!Tutorial1/*.md
