@@ -46,3 +46,4 @@ LearnCpp/*
 Tutorial1/*
 !Tutorial1/*.cpp
 !Tutorial1/*.md
+Tutorial1/tempCodeRunnerFile.cpp
