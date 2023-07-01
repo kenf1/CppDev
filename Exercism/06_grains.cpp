@@ -37,10 +37,10 @@ int64_t grainOnSquare(int square){
 
 //count total number grains on board
 int64_t totalNumGrains(){
-    int64_t runningCout;
+    int64_t runningCount;
     for(int i=1;i<=64;i++){
         int temp = grainOnSquare(i);
-        runningCout += temp;
+        runningCount += temp;
     }
-    return runningCout;
+    return runningCount;
 }

@@ -43,7 +43,7 @@ void ageCalc(double ageOnEarth,int planet){
             can use maps but will be more lines of code & complexity
     */
     const double conversionFactors[] = {0.2408467,0.61519726,1.0,1.8808158,11.862615,29.447498,84.016846,164.79132};
-    std::string planetNames[] = {"Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"};
+    const std::string planetNames[] = {"Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"};
     
     double planetAge;
     int index = planet-1;
