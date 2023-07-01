@@ -1,4 +1,8 @@
-FROM gcc:9.5.0
+FROM ubuntu:22.04
 
-COPY ./LearnCpp ./LearnCpp
-COPY ./Tutorial1 ./Tutorial1
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    software-properties-common
+
+COPY . .

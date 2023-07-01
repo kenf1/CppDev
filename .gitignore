@@ -37,7 +37,7 @@
 Sandbox.cpp
 Sandbox
 
-#exclude binaries in LearnCpp
+#exclude binaries in folders
 LearnCpp/*
 !LearnCpp/*.cpp
 !LearnCpp/*.md
@@ -47,3 +47,11 @@ Tutorial1/*
 !Tutorial1/*.cpp
 !Tutorial1/*.md
 Tutorial1/tempCodeRunnerFile.cpp
+
+LoginApp/*
+!LoginApp/*.cpp
+!LoginApp/*.md
+
+Exercism/*
+!Exercism/*.cpp
+!Exercism/*.md
