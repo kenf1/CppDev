@@ -42,6 +42,7 @@ LearnCpp/*
 !LearnCpp/*.cpp
 !LearnCpp/*.md
 !LearnCpp/12_MultiFile
+!LearnCpp/15_add.h
 
 Tutorial1/*
 !Tutorial1/*.cpp
@@ -55,3 +56,8 @@ LoginApp/*
 Exercism/*
 !Exercism/*.cpp
 !Exercism/*.md
+gradeschool-template.cpp
+
+MiscTutorialFiles/*
+!MiscTutorialFiles/*.cpp
+!MiscTutorialFiles/*.md

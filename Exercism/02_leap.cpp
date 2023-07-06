@@ -1,5 +1,3 @@
-#include <iostream>
-
 /*
     determine whether entered year is leap year
     rules:
@@ -7,6 +5,8 @@
             except every year that is evenly divisible by 100
             unless the year is also evenly divisible by 400
 */
+
+#include <iostream>
 
 int main(){
     int year;

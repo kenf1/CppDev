@@ -1,8 +1,8 @@
-#include <iostream>
-
 /*
     triangle: Determine if a triangle is equilateral, isosceles, or scalene.
 */
+
+#include <iostream>
 
 int main(){
     double side1,side2,side3;

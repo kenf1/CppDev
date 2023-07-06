@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cmath>
-
 /*
     Calculate the number of grains of wheat on a chessboard given that the number on each square doubles.
         2^n (n=square #)
@@ -8,6 +5,9 @@
         how many grains were on a given square, and
         the total number of grains on the chessboard
 */
+
+#include <iostream>
+#include <cmath>
 
 //using int64 to show actual number
 int64_t grainOnSquare(int square);

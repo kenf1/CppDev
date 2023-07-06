@@ -1,7 +1,7 @@
+//reverse a string
+
 #include <iostream>
 #include <string>
-
-//reverse a string
 
 std::string strReversal(std::string input);
 

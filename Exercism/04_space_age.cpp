@@ -1,5 +1,3 @@
-#include <iostream>
-
 /*
     Given an age in seconds, calculate how old someone would be on:
         Mercury: orbital period 0.2408467 Earth years
@@ -11,6 +9,8 @@
         Uranus: orbital period 84.016846 Earth years
         Neptune: orbital period 164.79132 Earth years
 */
+
+#include <iostream>
 
 double convertSec(double sec);
 void ageCalc(double ageOnEarth,int planet);
