@@ -42,7 +42,9 @@ LearnCpp/*
 !LearnCpp/*.cpp
 !LearnCpp/*.md
 !LearnCpp/12_MultiFile
+LearnCpp/12_MultiFile/main
 !LearnCpp/15_add.h
+!LearnCpp/16_ch2q
 
 Tutorial1/*
 !Tutorial1/*.cpp
