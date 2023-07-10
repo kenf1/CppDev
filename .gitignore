@@ -61,6 +61,8 @@ Exercism/*
 gradeschool-template.cpp
 allergies-test.cpp
 
-MiscTutorialFiles/*
-!MiscTutorialFiles/*.cpp
-!MiscTutorialFiles/*.md
+Snippets/*
+!Snippets/*.cpp
+!Snippets/*.md
+!Snippets/headers
+Snippets/headers/main
