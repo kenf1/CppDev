@@ -6,5 +6,5 @@ Learn C++ by working on projects of increasing difficulty. Using g++ compiler.
 
 > *"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off".*
 > 
-> Bjarne Stroustrup
+> -- Bjarne Stroustrup
 > [Source](https://www.stroustrup.com/quotes.html)

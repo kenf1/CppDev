@@ -59,6 +59,7 @@ Exercism/*
 !Exercism/*.cpp
 !Exercism/*.md
 gradeschool-template.cpp
+allergies-test.cpp
 
 MiscTutorialFiles/*
 !MiscTutorialFiles/*.cpp
