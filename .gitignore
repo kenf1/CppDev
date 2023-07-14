@@ -66,3 +66,5 @@ Snippets/*
 !Snippets/*.md
 !Snippets/headers
 Snippets/headers/main
+
+make_test/build
