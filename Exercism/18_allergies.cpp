@@ -3,21 +3,40 @@
 */
 
 #include <iostream>
-#include <unordered_map>
+#include <vector>
+#include <string>
 
-//constant name:value pairs
-    const std::unordered_map<int,std::string> allergens({
-        {1,"eggs"},
-        {2,"peanuts"},
-        {4,"shellfish"},
-        {8,"strawberries"},
-        {16,"tomatoes"},
-        {32,"chocolate"},
-        {64,"pollen"},
-        {128,"cats"},
-    });
+std::vector<std::string> get_allergies(int score);
 
-//main
 int main(){
+    int score = 34;
+    std::vector<std::string> allergies = get_allergies(score);
+
+    if(allergies.empty()){
+        std::cout << "Not allergic to any of the allergens listed above.\n";
+    }else{
+        std::cout << "Allergic to the following:" << "\n";
+        for(auto allergy : allergies){
+            std::cout << "- " << allergy << "\n";
+        }
+    }
+
     return 0;
+}
+
+std::vector<std::string> get_allergies(int score){
+    std::vector<std::string> allergies; //store user's allergies
+    
+    const std::vector<std::string> allergens = {"eggs","peanuts","shellfish",
+        "strawberries","tomatoes","chocolate","pollen","cats"};
+    const std::vector<int> allergen_values = {1,2,4,8,16,32,64,128}; //can use pow(2,n)
+
+    for(int i=allergen_values.size()-1;i>=0;i--){
+        if(score>=allergen_values[i]){
+            allergies.push_back(allergens[i]);
+            score -= allergen_values[i];
+        }
+    }
+
+    return allergies;
 }

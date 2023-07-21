@@ -64,7 +64,11 @@ allergies-test.cpp
 Snippets/*
 !Snippets/*.cpp
 !Snippets/*.md
+!Snippets/*.h
 !Snippets/headers
 Snippets/headers/main
 
 make_test/build
+
+w3resource/Basic-Algorithm/*
+!w3resource/Basic-Algorithm/*.cpp
