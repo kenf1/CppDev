@@ -16,11 +16,11 @@ int main(){
 int add2(int value1,int value2){
     int result;
 
-    if(value1==value2){
-        result = 3*(value1+value2);
-    }else{
-        result = value1+value2;
-    }
+    // if(value1==value2){
+    //     result = 3*(value1+value2);
+    // }else{
+    //     result = value1+value2;
+    // }
 
-    return result;
+    return value1==value2 ? 3*(value1+value2):value1+value2;
 }
