@@ -68,6 +68,9 @@ Snippets/*
 !Snippets/headers
 Snippets/headers/main
 
+CLI/*
+!CLI/*.cpp
+
 make_test/build
 
 w3resource/Basic-Algorithm/*
