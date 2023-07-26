@@ -75,3 +75,7 @@ make_test/build
 
 w3resource/Basic-Algorithm/*
 !w3resource/Basic-Algorithm/*.cpp
+w3resource/ForLoop/*
+!w3resource/ForLoop/*.cpp
+w3resource/Date/*
+!w3resource/Date/*.cpp
