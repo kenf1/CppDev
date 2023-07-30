@@ -70,6 +70,7 @@ Snippets/headers/main
 
 CLI/*
 !CLI/*.cpp
+!CLI/*.md
 
 make_test/build
 
