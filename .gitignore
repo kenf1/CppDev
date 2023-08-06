@@ -67,6 +67,8 @@ Snippets/*
 !Snippets/*.h
 !Snippets/headers
 Snippets/headers/main
+!Snippets/jsonTest
+Snippets/jsonTest/createJson
 
 CLI/*
 !CLI/*.cpp
@@ -80,3 +82,10 @@ w3resource/ForLoop/*
 !w3resource/ForLoop/*.cpp
 w3resource/Date/*
 !w3resource/Date/*.cpp
+w3resource/Files/*
+!w3resource/Files/*.cpp
+!w3resource/Files/*.h
+!w3resource/Files/*.txt
+
+#all 3rd party libraries
+libs
