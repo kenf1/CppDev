@@ -9,7 +9,7 @@
 
 int main(){
     // std::ifstream input("test.txt");
-    std::ifstream input = openTxt("test.txt");
+    std::ifstream input = openTxt();
 
     //print each line while file is open
     if(input.is_open()){

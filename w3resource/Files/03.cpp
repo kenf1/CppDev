@@ -8,7 +8,7 @@
 #include <string>
 
 int main(){
-    std::ifstream input = openTxt("test.txt");
+    std::ifstream input = openTxt();
 
     if(input.is_open()){
         std::string line;

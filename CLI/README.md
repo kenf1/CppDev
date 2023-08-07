@@ -1,3 +1,3 @@
 ## CLI Apps
 
-Collection of CLI apps
+Collection of Command Line Interface (CLI) apps
