@@ -8,6 +8,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <fstream>
 
 class Item{
     public:
@@ -17,8 +18,7 @@ class Item{
         char Nice;
 };
 
-void newLine();
-std::string rowContent(Item* items,int size,int i);
+std::string rowContent(Item* items,int size,int i,std::string type);
 
 int main(){
     int size;
@@ -51,11 +51,30 @@ int main(){
     }
 
     //tsv header
-    std::cout << headers();
+    std::cout << headers("csv");
 
     //tsv row content
     for(int i=0;i<size;i++){
-        std::cout << rowContent(items,size,i);
+        std::cout << rowContent(items,size,i,"tsv");
+    }
+
+    //write to file
+    std::ofstream outputFile("out.tsv");
+
+    if(outputFile.is_open()){
+        //headers
+        outputFile << headers("csv");
+        
+        //rows
+        for(int i=0;i<size;i++){
+            outputFile << rowContent(items,size,i,"tsv");
+        }
+
+        outputFile.close();
+
+        std::cout << "File successfully created.\n";
+    }else{
+        std::cout << "Process failed.\n";
     }
 
     //de-allocate memory
@@ -63,12 +82,24 @@ int main(){
     return 0;
 }
 
-//store array as tsv row
-std::string rowContent(Item* items,int size,int i){
+/*
+    store array as tsv or csv row
+        default will be csv
+*/
+std::string rowContent(Item* items,int size,int i,std::string type){
+    std::string sep;
+
+    if(type=="tsv"){
+        sep = "\t";
+    }else{
+        sep = ",";
+    }
+
+    //store std::cout as std::string
     std::ostringstream oss;
 
-    oss << "Item " << i+1 << "\t" << items[i].Name << "\t" 
-        << items[i].Rating << "\t" << items[i].Price << "\t" 
+    oss << "Item " << i+1 << sep << items[i].Name << sep 
+        << items[i].Rating << sep << items[i].Price << sep 
         << items[i].Nice << "\n";
         
     std::string result = oss.str();

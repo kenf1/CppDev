@@ -1,8 +1,14 @@
 #include <iostream>
 #include <string>
 
-//add headers
-std::string headers(){
-    std::string text = "Index\t Name\t Rating\t Price\t Nice\n";
-    return text;
+/*
+    add headers
+        default is csv ","
+*/
+std::string headers(std::string ext){
+    if(ext=="tsv"){
+        return "Index\t Name\t Rating\t Price\t Nice\n";
+    }else{
+        return "Index,Name,Rating,Price,Nice\n";
+    }
 }
