@@ -89,3 +89,6 @@ w3resource/Files/*
 
 #all 3rd party libraries
 libs
+
+VerTest/*
+!VerTest/*.cpp
