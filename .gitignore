@@ -73,6 +73,7 @@ Snippets/jsonTest/createJson
 CLI/*
 !CLI/*.cpp
 !CLI/*.md
+!CLI/*.sh
 
 make_test/build
 
