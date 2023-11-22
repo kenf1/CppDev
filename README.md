@@ -4,7 +4,7 @@ Learn C++ by working on projects of increasing difficulty. Uses g++ compiler.
 
 ***Note***: Entire repo can be built and run as a dev Docker container.
 
-> *"C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off".*
+> C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.  
 > 
-> -- Bjarne Stroustrup
+> \- Bjarne Stroustrup  
 > [Source](https://www.stroustrup.com/quotes.html)
